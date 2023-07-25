@@ -6,11 +6,27 @@
     <!-- tailwind & daisy ui cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/985549e602.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <!-- custom  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'custom-color1': '#F85559',
+                'custom-color2': '#12121299',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
     <header>
-        <div class="navbar bg-base-100">
+        <nav class="navbar bg-custom-color1 text-white">
             <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
@@ -24,7 +40,10 @@
             </div>
             <div class="navbar-end">
                 <div class="hidden lg:block">
-                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                    <div class="flex items-center justify-between bg-white w-72 p-5 text-custom-color2">
+                        <p>Search here</p>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                   </div>
                     <div class="dropdown dropdown-end">
                       <label tabindex="0" class="btn btn-ghost  lg:hidden">
@@ -38,7 +57,7 @@
                       </ul>
                     </div>
             </div>
-          </div>
+          </nav>
     </header>
 
 </body>
