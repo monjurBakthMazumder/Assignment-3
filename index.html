@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,10 +47,10 @@
 
         <div class="hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-lg font-medium">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Shop">Shop</a></li>
+                    <li><a href="#Fruits">All Fruits</a></li>
                 </ul>
         </div>
         <div class="lg:mx-auto gap-3">
@@ -69,15 +69,15 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                   </label>
                   <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Shop">Shop</a></li>
+                    <li><a href="#Fruits">All Fruits</a></li>
                   </ul>
                 </div>
         </div>
       </nav>
-    <header class="md:w-[90%] lg:w-[80%] mx-auto">
+    <header id="Home" class="md:w-[90%] lg:w-[80%] mx-auto">
       <section class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="./images/banner1.png" class="w-full" />
@@ -138,7 +138,7 @@
       </section>
     </header>
     <main class="w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
-      <section class="my-12">
+      <section id="Shop" class="my-12">
         <div class="flex flex-col text-center items-center justify-between lg:flex-row lg:text-left">
           <div>
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-custom-color3 mb-5">Deal of the day</h1>
@@ -386,7 +386,7 @@
           </div>
         </div>
       </section>
-      <section class="my-12">
+      <section id="About" class="my-12">
         <div class="hero bg-custom-bg rounded-lg">
           <div class="hero-overlay bg-black bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
